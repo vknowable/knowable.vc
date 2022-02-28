@@ -1,13 +1,14 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Knowable</title>
   <meta name="description" content="Knowable helps Web3 contributors to coordinate, inform & guide decentralized communities.">
-  <meta name="author" content="Ian">
+  <meta name="author" content="ian@knowable.vc">
 
   <meta property="og:title" content="Knowable">
   <meta property="og:type" content="website">
@@ -19,59 +20,199 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
 
-<p>Surfacing important Web3 stuff</p>
-<h1>Knowable</h1>
-<p>Web3’s made big promises</p>
-<p>We help the people of Web3 to keep their promises.</p>
+  <!--Navbar begin-->
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Knowable</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navKnowable" aria-controls="navKnowable" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<img src="img/perspective.png" alt="Boy looking pensive" width="100" height="100">
+      <div class="collapse navbar-collapse" id="navKnowable">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Network Infra</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+              <li><a class="dropdown-item" href="#">Agoric</a></li>
+              <li><a class="dropdown-item" href="#">Connext</a></li>
+              <li><a class="dropdown-item" href="#">Evmos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar end-->
 
-<h2>We have perspective.</h2>
-<ul>
-<li>Intro to Web3</li>
-<li>Web3 Wiki</li>
-<li>What’s Next blog</li>
-</ul>
 
-<img src="img/engage.png" alt="Family swimming" width="100" height="100">
+  <!--Hero start-->
+  <section class="hero-container text-center">
+    <div class="home-table">
+      <div class="home-table-center">
+        <div class="container hero-text  px-4 py-5">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="text-center">
+                <p class="hero-tag">Surfacing important Web3 stuff</p>
+                <h1 class="hero-header text-uppercase">Knowable</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<h2>We engage.</h2>
+    <div class="scroll_down">
+      <a href="#pitch_section" class="scroll">
+        <i class="mbri-arrow-down text-white"></i>
+      </a>
+    </div>
 
-<p>We advise Web3 contributors:</p>
-<ul>
-<li>Relationship development</li>
-<li>Design ideas & considerations</li>
-<li>Education & policy</li>
-</ul>
+  </section>
+  <!--Hero end-->
 
-<img src="img/collab.png" alt="Family swimming, also" width="100" height="100">
+  <!--Pitch start-->
+  <section class="pitch-container container d-flex   justify-content-center align-items-center" id="pitch_section">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <h2><span>Web3’s</span> Made Big Promises...</h2>
+          <p>We help the people of Web3 to keep their promises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Pitch end-->
 
-<h2>We collaborate.</h2>
-<ul>
-<li>Knowable operates Web3 infrastructure.</li>
-<li>We help contributors to coordinate, inform & guide decentralized
-  communities.</li>
-</ul>
+  <hr>
 
-<img src="img/invest.png" alt="Starry sky" width="100" height="100">
+  <!--Detail start-->
+  <div>
+    <div class="container  ">
+      <div class="row my-4 d-flex   justify-content-center align-items-center">
+        <div class="col-sm-6  ">
+          <div class="d-flex justify-content-center align-items-center  ">
+            <img src="img/perspective.jpg" class="img-fluid rounded-pill pitch-image">
+          </div>
+        </div>
+        <div class="col-sm-6 text-left  ">
+          <div class="d-flex   justify-content-center justify-content-sm-start align-items-center">
+            <h2 class=" ">We have perspective.</h2>
+          </div>
+          <div class="d-flex   justify-content-center justify-content-sm-start align-items-center">
+            <ul class="pitch-list  ">
+              <li class="pitch-list-item">Intro to Web3</li>
+              <li class="pitch-list-item">Web3 Wiki</li>
+              <li class="pitch-list-item">What’s Next blog</li>
+          </div>
+          </ul>
+        </div>
+      </div>
 
-<h2>We invest.</h2>
-<ul>
-<li>We love the Web3 communities that are building decentralized
-  foundations.</li>
-<li>Investing is the easiest way to get aligned.</li>
-</ul>
+      <div>
+        <div class="container  ">
+          <div class="row my-4 d-flex   justify-content-center align-items-center">
+            <div class="col-sm-6  ">
+              <div class="d-flex justify-content-center align-items-center  ">
+                <img src="img/engage.jpg" class="img-fluid rounded-pill pitch-image">
+              </div>
+            </div>
+            <div class="col-sm-6 text-left  ">
+              <div class="d-flex   justify-content-center justify-content-sm-start align-items-center">
+                <h2 class=" ">We engage.</h2>
+              </div>
+              <div class="d-flex   justify-content-center justify-content-sm-start align-items-center">
+                <p class=" ">We advise Web3 contributors:</p>
+              </div>
+              <div class="d-flex   justify-content-center justify-content-sm-start align-items-center">
+                <ul class="pitch-list  ">
+                  <li class="pitch-list-item">Relationship development</li>
+                  <li class="pitch-list-item">Design ideas & considerations</li>
+                  <li class="pitch-list-item">Education and policy</li>
+              </div>
+              </ul>
+            </div>
+          </div>
 
-<hr>
-<p>Curious?</p>
+          <div>
+            <div class="container  ">
+              <div class="row my-4 d-flex   justify-content-center align-items-center">
+                <div class="col-sm-6  ">
+                  <div class="d-flex justify-content-center align-items-center  ">
+                    <img src="img/collab.jpg" class="img-fluid rounded-pill pitch-image">
+                  </div>
+                </div>
+                <div class="col-sm-6 text-left  ">
+                  <div class="d-flex   justify-content-center justify-content-sm-start align-items-center">
+                    <h2 class=" ">We collaborate.</h2>
+                  </div>
+                  <div class="d-flex   justify-content-center justify-content-sm-start align-items-center">
+                    <ul class="pitch-list  ">
+                      <li class="pitch-list-item">Knowable operates Web3 infrastructure</li>
+                      <li class="pitch-list-item">We help contributors to coordinate, inform & guide decentralized communities</li>
+                  </div>
+                  </ul>
+                </div>
+              </div>
 
-<p>TWITTER DMS ARE OPEN: @VKNOWABLE</p>
+              <div>
+                <div class="container  ">
+                  <div class="row   d-flex   justify-content-center align-items-center">
+                    <div class="col-sm-6  ">
+                      <div class="d-flex justify-content-center align-items-center  ">
+                        <img src="img/invest.jpg" class="img-fluid rounded-pill pitch-image">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 text-left  ">
+                      <div class="d-flex   justify-content-center justify-content-sm-start align-items-center">
+                        <h2 class=" ">We invest.</h2>
+                      </div>
+                      <div class="d-flex   justify-content-center justify-content-sm-start align-items-center">
+                        <ul class="pitch-list  ">
+                          <li class="pitch-list-item">We love the Web3 communities that are building decentralized foundations</li>
+                          <li class="pitch-list-item">Investing is the easiest way to get aligned</li>
+                      </div>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!--Detail end-->
+
+                  <hr>
+
+                  <!--Contact start-->
+                  <section class="contact-container container d-flex   justify-content-center align-items-center" id="contact_section">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="text-center">
+                          <h2>Curious?</h2>
+                          <p>TWITTER DMS ARE OPEN: @VKNOWABLE</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!--Contact end-->
+
+                  <!--Footer start-->
+                  <!--Footer end-->
+
+                  <!--Bootstrap script-->
+                  <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
