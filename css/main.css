@@ -4,7 +4,14 @@ body {
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
   background-color: #212529;
-  color: white;
+  color: #DDD;
+}
+
+/*
+* {border:1px solid red}
+*/
+html {
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -13,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1.font-weight-bold,
@@ -22,45 +29,149 @@ h3.font-weight-bold,
 h4.font-weight-bold,
 h5.font-weight-bold,
 h6.font-weight-bold {
-    font-weight: 600 !important;
+  font-weight: 600 !important;
 }
 
 ::selection {
-    background: rgba(166, 175, 189, 0.3);
+  background: rgba(166, 175, 189, 0.3);
 }
 
 ::-moz-selection {
-    background: rgba(166, 175, 189, 0.3);
+  background: rgba(166, 175, 189, 0.3);
 }
-
 
 .hero-container {
   height: 100vh;
-  width: 100vw;
-
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(100, 100, 100, 0.2)), url('../img/knowable-splash.jpg');
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.4)), url('../img/knowable-splash.jpg');
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-blend-mode: overlay;
+}
+
+/* text shimmer animation start */
+.shimmer {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: inline;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 5px #111;
+}
+
+.shimmer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 40px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+/* text shimmer animation end */
+/* twinkling stars animation
+
+@keyframes twinkle-anim {
+  0%   {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.hero-stars {
+  height: 100vh;
+  width: 100vw;
+
+  background: url('../img/stars.png');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  animation: twinkle-anim 5s ease-in-out 1s infinite alternate;
+
+}
+*/
+.text-backing {
+
 }
 
 .home-table-center {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .home-table {
-    display: table;
-    width: 100%;
-    height: 75%;
+  display: table;
+  width: 100%;
+  height: 67%;
 }
 
-.hero-text{
-
-}
+.hero-text {}
 
 .hero-header {
   color: white;
@@ -71,57 +182,127 @@ h6.font-weight-bold {
 }
 
 .hero-tag {
-  color: grey;
+  color: #CCC;
   line-height: 2.0;
   font-size: 18px;
+  text-shadow: 0px 0px 20px #222;
 }
 
-.scroll_down {
-    position: absolute;
-    bottom: 5vh;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: 13px;
-    z-index: 8;
+/* scroll down icon and animation start */
+.icon-scroll {
+  display: block;
+  position: absolute;
+  bottom: 5vh;
+  padding: 3px 30px 12px 30px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  background-color: rgba(22, 22, 22, 0.5);
 }
 
-.scroll_down i {
-    position: relative;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-    height: 50px;
-    width: 30px;
-    line-height: 60px;
-    border-radius: 30px;
-    border: 2px solid #ffffff;
-    display: inline-block;
-    color: #fff;
-    font-size: 12px;
+.scroll-arrows {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  border-right: 2px solid #999;
+  border-bottom: 2px solid #999;
+  margin: 0 0 0px 2px;
+  width: 16px;
+  height: 16px;
 }
 
-.scroll_down i:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    z-index: -1;
-    transition: all .2s;
+.scroll-one, .scroll-two {
+  -webkit-animation: scroll-anim 1s infinite;
+  -moz-animation: scroll-anim 1s infinite;
+  animation: scroll-anim 1s infinite;
 }
 
+.scroll-one {
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.scroll-two {
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  animation-delay: .2s;
+  animation-direction: alternate;
+  margin-top: -5px;
+}
+
+@-webkit-keyframes scroll-anim {
+  0% {
+    opacity: .4;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: .7;
+  }
+}
+
+@-moz-keyframes scroll-anim {
+  0% {
+    opacity: .4;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: .7;
+  }
+}
+
+@-o-keyframes scroll-anim {
+  0% {
+    opacity: .4;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: .7;
+  }
+}
+
+@keyframes scroll-anim {
+  0% {
+    opacity: .4;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: .7;
+  }
+}
+
+/* scroll down icon and animation end */
 .pitch-container {
   height: 20vh;
   width: 100vw;
-
 }
 
 .pitch-list {
   padding: 0;
   list-style-type: circle;
   list-style-position: outside;
+  max-width: 250px;
 }
 
 .pitch-list-item {
@@ -130,4 +311,13 @@ h6.font-weight-bold {
 
 .pitch-image {
   height: 200px;
+}
+
+.twitter-text {
+  text-transform: uppercase;
+  font-variant: small-caps;
+}
+
+.copyright {
+  color: grey;
 }
