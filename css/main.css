@@ -53,13 +53,54 @@ h6.font-weight-bold {
   background-blend-mode: overlay;
 }
 
+/* Media queries for header text size */
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .shimmer {
+    font-size: 14vw;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 0 0;
+  }
+
+  .hero-tag {
+    line-height: 2.0;
+    font-size: calc(10px + 1.4vw);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .shimmer {
+    font-size: calc(60px + 3vw);
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 0 0;
+  }
+
+  .hero-tag {
+    line-height: 2.0;
+    font-size: calc(10px + 1.4vw);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
 /* text shimmer animation start */
 .shimmer {
-  font-size: 60px;
+  /*  font-size: 12vw;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.2;*/
   margin: 0 auto;
-  padding: 0 40px;
+  /*padding: 0 20px;*/
   display: inline;
   margin-bottom: 0;
   text-shadow: 2px 2px 5px #111;
@@ -67,7 +108,7 @@ h6.font-weight-bold {
 
 .shimmer {
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.75);
   background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
   background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
   background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
@@ -80,9 +121,9 @@ h6.font-weight-bold {
   -webkit-animation-name: shimmer;
   -moz-animation-name: shimmer;
   animation-name: shimmer;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -156,19 +197,22 @@ h6.font-weight-bold {
 
 }
 */
-.text-backing {
+.text-backing {}
 
+.green {
+  background-color: green;
 }
 
 .home-table-center {
   display: table-cell;
   vertical-align: middle;
+  width: 100%;
 }
 
 .home-table {
   display: table;
   width: 100%;
-  height: 67%;
+  height: 67vh;
 }
 
 .hero-text {}
@@ -183,20 +227,27 @@ h6.font-weight-bold {
 
 .hero-tag {
   color: #CCC;
-  line-height: 2.0;
-  font-size: 18px;
+  /*  line-height: 2.0;
+  font-size: 3vw; */
   text-shadow: 0px 0px 20px #222;
+}
+
+.green {
+  border-color: green;
+  background-color: white;
 }
 
 /* scroll down icon and animation start */
 .icon-scroll {
-  display: block;
+  display: flex;
   position: absolute;
   bottom: 5vh;
-  padding: 3px 30px 12px 30px;
+  left: 50vw;
+  transform: translate(-50%);
+  padding: 3px 20px;
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 20px;
-  background-color: rgba(22, 22, 22, 0.5);
+  background-color: rgba(22, 22, 22, 0.7);
 }
 
 .scroll-arrows {
@@ -211,6 +262,10 @@ h6.font-weight-bold {
   margin: 0 0 0px 2px;
   width: 16px;
   height: 16px;
+}
+
+.both-arrows {
+  transform: translate(0, -3px);
 }
 
 .scroll-one, .scroll-two {
@@ -288,7 +343,7 @@ h6.font-weight-bold {
   }
 
   100% {
-    opacity: .7;
+    opacity: .8;
   }
 }
 
@@ -302,7 +357,7 @@ h6.font-weight-bold {
   padding: 0;
   list-style-type: circle;
   list-style-position: outside;
-  max-width: 250px;
+  max-width: 220px;
 }
 
 .pitch-list-item {
