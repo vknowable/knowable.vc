@@ -11716,9 +11716,6 @@ body {
 }
 
 .about-section {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  background: var(--custom-dark-color);
 }
 .about-subhead {
   font-family: var(--bs-header-font-family);
@@ -11728,10 +11725,12 @@ body {
 .about-desc {
   margin-bottom: 1.5rem;
 }
+.about-desc:last-child {
+  margin-bottom: 0;
+}
 
 .projects-section {
-  padding: 0;
-  padding-top: 4rem;
+
 }
 .projects-section .featured-text {
   padding: 2rem;
