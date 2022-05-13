@@ -11712,11 +11712,6 @@ body {
   font-size: 1.2rem;
   font-family: var(--bs-tagline-font-family);
 }
-@media (max-width: 500px) {
-  .masthead h1 {
-    color: green;
-  }
-}
 
 @media (min-width: 375px) {
   .masthead h1 {
