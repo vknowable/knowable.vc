@@ -19,174 +19,169 @@
   <link rel="icon" type="image/png" href="assets/favicon.png"/>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
   <!-- Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-  <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/main.css" rel="stylesheet" />
 </head>
 
-<body id="page-top">
+<body>
+  <div id="body-container">
+  <!--nav-->
+  <nav id="mainNav" class="mainNav">
+    <div class="nav-container">
+      <div class="nav-row">
+        <a class="navbar-brand" href="./index.html">Knowable</a>
+        <button class="navbar-toggler">Menu</button>
+      </div>
 
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container px-4 px-lg-5">
-      <a class="navbar-brand" href="#page-top">Knowable</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="./namada">Know Namada</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://vknowable.github.io/knowable-blog/">Recent articles</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Say hi!</a></li>
-        <!--  <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Ecosystems
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="./namada.html">Namada</a></li>
-            </ul>
-          </li>-->
-        </ul>
+      <div id="navbarResponsive" class="navbarResponsive navbarResponsive-hide">
+        <a class="nav-link" href="./namada.html">Know Namada</a>
+        <a class="nav-link" href="https://vknowable.github.io/knowable-blog/">Recent articles</a>
+        <a class="nav-link" href="#contact">Say hi!</a>
       </div>
     </div>
   </nav>
-  <!-- Masthead-->
-  <header class="masthead">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center header-vertical">
-      <div class="d-flex justify-content-center">
-        <div class="text-center">
-          <h2 class="masthead-subhead mx-auto mt-2 mb-5">crypto, not cryptic</h2>
-          <h1 class="mx-auto my-0">Knowable</h1>
-          <br><br>
-          <h2 class="masthead-subhead mx-auto mt+2 mb+5">ecosystems, not monopolies</h2>
-        </div>
+  <!--end nav-->
+
+
+  <!--Hero-->
+  <div id="hero-container">
+    <div class="hero-color"></div>
+    <div class="hero-grey"></div>
+    <div class="float-me title-box" style="top: 25vh; height: auto;">
+      <h2>ecosystems, not monopolies</h2>
+      <div class="title-rule"></div>
+      <h1>Knowable</h1>
+      <!--
+      <div class="title-rule"></div>
+      <h2>ecosystems, not monopolies</h2>
+    -->
+    </div>
+    <div class="float-me blue-overlay"></div>
+    <div class="float-me tag-box">
+      <p>The future of digital infrastructure will be built on <span style="color: #e67618;">decentralized tech</span>, where global communities <span><span class="blink">innovate,</span> <span class="blink" style="animation-delay: 0.3s;">interconnect</span> and <span class="blink"style="animation-delay: 0.6s;">thrive</span> in new ways.</p>
+    </div>
+  </div>
+  <!--end Hero-->
+
+  <!--Team-->
+  <div id="team" class="section">
+    <h3 class="section-head">Knowable is a curious bunch</h3>
+    <div class="section-rule"></div>
+    <p class="body-text">Scouts, mapping out new opportunities to make our home in a new world.</p>
+
+    <div class="card-container">
+      <div class="card team-card">
+        <img src="./assets/gavin-avatar.jpg" width="150" height="150" alt="Headshot" class="team-img">
+        <h4>GAVIN BIRCH</h4>
+        <p class="job-title">PROTOCOL</p>
+        <div class="card-rule"></div>
+        <p class="bio">New ideas, new home. Same old values. Founding at Figment, founding partner at Figment Capital. Founding efforts for Cosmos governance.</p>
+      </div>
+
+      <div class="card team-card">
+        <img src="./assets/ian-avatar.jpg" width="150" height="150" alt="Headshot" class="team-img">
+        <h4>IAN KAY</h4>
+        <p class="job-title">DEVOPS</p>
+        <div class="card-rule"></div>
+        <p class="bio">Interested in how things work. Always ready for a new challenge. Which is perfect, because making things work can be challenging.</p>
+      </div>
+
+      <div class="card team-card">
+        <img src="./assets/dave-avatar.jpg" width="150" height="150" alt="Headshot" class="team-img">
+        <h4>DAVE FITZSIMMONS</h4>
+        <p class="job-title">ORGDEV</p>
+        <div class="card-rule"></div>
+        <p class="bio">Passion for global perspectives. Can swear in five languages. Over 10 years of startup experience operating in North America, China, Vietnam, and Brazil.</p>
+      </div>
+
+    </div>
+  </div>
+  <!--end Team-->
+
+  <!--About-->
+  <div id="about" class="section">
+
+    <p class="body-text body-blink">We're on a mission to back the leaders laying the groundwork for a digital world that's uncompromisingly open and permissionless. Together, we strategically advance the communities of this ideological frontier.</p>
+
+    <p class="body-text body-blink m-top"  style="animation-delay: 5s;">We're operators, securing decentralized networks with local, bare metal (and so can you) 🛡️
+      We're story-tellers (gather round 🔥), scheming to unlock new crypto superpowers ✨
+      Watching the edges (so that we don't all fall off) 📐
+    </p>
+
+    <p class="body-text body-blink m-top" style="animation-delay: 10s;">Born in the Ξther, living in the Cosmos 🌌, and looking ever upward toward a better world 🔭
+    </p>
+
+  </div>
+  <!--end About-->
+
+  <!--section break--
+  <div id="section-break"></div>
+  <!--end break-->
+
+
+
+  <!--Contact-->
+  <div id="contact" class="section">
+    <h3 class="section-head">Hi!</h3>
+    <div class="section-rule" style="width: 100px;"></div>
+    <p class="body-text">Working on something interesting? Care about the same stuff? Let’s meet <a href="mailto:hi@knowable.vc"><span class="smile">🙂</span></a>
+    </p>
+    <p class="body-text m-top">Lurking? Follow along and maybe <a href="https://forms.gle/UWw17pxhg9cMzicu6" target="_blank" rel="noopener noreferrer">keep in touch</a>.
+    </p>
+
+    <!--<p class="say-hi">Say Hi!</p>-->
+    <div id="social-list">
+      <a href="https://twitter.com/vKnowable" target="_blank" rel="noopener noreferrer">
+        <svg class="social-icon" width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <defs></defs>
+          <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+        </svg>
+      </a>
+      <a href="https://github.com/vknowable" target="_blank" rel="noopener noreferrer">
+        <svg class="social-icon" width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <defs></defs>
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+        </svg>
+      </a>
+      <a href="mailto:hi@knowable.vc">
+          <svg class="social-icon" viewBox="0 0 24 24" width="50" height="50" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M22,5V9L12,13,2,9V5A1,1,0,0,1,3,4H21A1,1,0,0,1,22,5ZM2,11.154V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V11.154l-10,4Z"></path></g>
+          </svg>
+      </a>
+    </div>
+
+  </div>
+  <!--end Contact-->
+
+
+  <!--Footer-->
+  <div id="footer">
+    <div class="footer-wrapper">
+      <div class="footer-brand">
+        <a href="./index.html"><h5>Knowable</h5></a>
+        <p>A Compass for Web3</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="https://vknowable.github.io/knowable-blog/">Blog</a></li>
+          <li>Ecosystems
+            <ul>
+              <li><a href="./namada">Namada</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-  </header>
+    <p>Copyright © Knowable 2023</p>
+  </div>
+  <!--end Footer-->
+</div>
 
-  <!-- About-->
-  <section class="about-section text-center custom-bg-dark" id="about">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8">
-          <h2 class="text-white mb-4">Web3's made big promises</h2>
-          <p class="text-white-50 about-subhead">
-            We help the people of Web3 to keep their promises.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- What we do-->
-  <section class="projects-section custom-bg-light" id="whatwedo">
-    <div class="container px-4 px-lg-5">
-      <!-- perspective -->
-      <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-        <div class="col-xl-8 col-lg-7"><img class="img-fluid project-image mb-3 mb-lg-0" src="assets/img/perspective.jpg" alt="..." /></div>
-        <div class="project-list-container col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4 class="project-list-header">We have perspective</h4>
-            <ul class="project-list custom-text-light mb-0">
-              <li class="project-li">Intro to Web3</li>
-              <li class="project-li">Web3 Wiki</li>
-              <li class="project-li">What’s Next blog</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- engage -->
-      <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-        <div class="col-xl-8 col-lg-7"><img class="img-fluid project-image mb-3 mb-lg-0" src="assets/img/engage.jpg" alt="..." /></div>
-        <div class="project-list-container col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4 class="project-list-header">Led by curiosity</h4>
-            <ul class="project-list custom-text-light mb-0">
-              <li class="project-li">We advise Web3 contributors</li>
-              <li class="project-li">Relationship development</li>
-              <li class="project-li">Design ideas & considerations</li>
-              <li class="project-li">Education and policy</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- collaborate -->
-      <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-        <div class="col-xl-8 col-lg-7"><img class="img-fluid project-image mb-3 mb-lg-0" src="assets/img/collab.jpg" alt="..." /></div>
-        <div class="project-list-container col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4 class="project-list-header">We collaborate</h4>
-            <ul class="project-list custom-text-light mb-0">
-              <li class="project-li">Knowable operates Web3 infrastructure</li>
-              <li class="project-li">We help contributors to coordinate, inform & guide decentralized communities</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- invest -->
-      <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-        <div class="col-xl-8 col-lg-7"><img class="img-fluid project-image mb-3 mb-lg-0" src="assets/img/invest.jpg" alt="..." /></div>
-        <div class="project-list-container col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4 class="project-list-header">We invest</h4>
-            <ul class="project-list custom-text-light mb-0">
-              <li class="project-li">We love the Web3 communities that are building decentralized foundations</li>
-              <li class="project-li">Investing is the easiest way to get aligned</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact-->
-  <section class="contact-section custom-bg-dark" id="contact">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card custom-bg-light py-4 h-100" style="border:none; border-radius: 50px 5px 50px 5px;">
-            <div class="card-body text-center">
-
-              <h4 class="contact-header m-0">Curious?</h4>
-              <hr class="my-4 mx-auto" style="color:#9c9c9c;"/>
-              <div class="small custom-text-light contact-tag">Twitter DMs are open: @vKnowable</div>
-              <hr class="my-4 mx-auto" style="color:#9c9c9c;"/>
-            </div>
-
-            <div class="social d-flex justify-content-center">
-              <a class="mx-2" href="https://twitter.com/vKnowable" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a class="mx-2" href="https://github.com/vknowable" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-  </section>
-  <!-- Footer-->
-  <footer class="footer custom-bg-dark small text-center">
-    <div class="container px-4 px-lg-5">Copyright &copy; Knowable 2022</div>
-  </footer>
-
-
-
-
-
-
-  <!-- Bootstrap core JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Core theme JS-->
-  <script src="js/scripts.js"></script>
-
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
