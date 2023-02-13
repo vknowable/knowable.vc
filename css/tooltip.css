@@ -26,22 +26,28 @@
   padding: 1rem 0.25rem;
   color: var(--tooltip-text-color);
   background: var(--tooltip-background-color);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-family: 'Inter', sans-serif;
   line-height: 1.35;
   z-index: 100;
   white-space: normal;
-  width: 250px;
-   height: auto;
- opacity: 1;
+  width: 210px;
+  height: auto;
+  opacity: 1;
   transition: opacity 2s ease;
 }
 @media only screen and (min-width: 1101px) {
-.Tooltip-Tip {
-  white-space: nowrap;
-  width: auto;
-  transform: translateX(-50%);
+  .Tooltip-Tip {
+    width: 250px;
+    font-size: 0.875rem;
+  }
 }
+@media only screen and (min-width: 1101px) {
+  .Tooltip-Tip {
+    white-space: nowrap;
+    width: auto;
+    transform: translateX(-50%);
+  }
 }
 
 /* CSS border triangles */
